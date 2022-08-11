@@ -23,7 +23,7 @@ const dataCard = () => {
 
  const dataCars = async () => {
 
-    const url = 'https://car-data.p.rapidapi.com/cars?limit=20&page=0';
+    const url = 'https://car-data.p.rapidapi.com/cars?limit=5&page=0';
     const options = {
         method: 'GET',
         headers: {
@@ -41,7 +41,8 @@ const dataCard = () => {
         return{
             year: element.year,
             make:element.make, 
-            id:element.id,   
+            id:element.id,
+           
         }
     })
 

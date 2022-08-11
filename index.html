@@ -6,75 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:wght@200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,600;0,800;1,100;1,400&family=Rubik:wght@600&display=swap" rel="stylesheet">
     <!--<link rel="shortcut icon" class="logo" href="./img/ana200x200.png">-->
 
     <title>cotizador de automoviles</title>
 </head>
-<!--<body>
 
-    <header>
-        <h1>Cotizador de seguros</h1>
-    </header>
-
-    <form>
-        <div class="msj-error"></div>
-
-        <label>Marca</label>
-        <select name="marca" id="marca" class="marca">
-            <option value="" class="">---Seleccione---</option>
-            <option value="americano" class="value">Americano</option>
-            <option value="europeo" class="value">Europeo</option>
-            <option value="asiatico" class="value">Asiatico</option>
-        </select>
-<input type="date" class="">
-        <label>Año</label>
-        <select name="año" id="año" class="año">
-            
-            <option value="" class="">---Seleccione---</option>
-            <option value="2022" class="value">2022</option>
-            <option value="2021" class="value">2021</option>
-            <option value="2020" class="value">2020</option>
-            <option value="2019" class="value">2019</option>
-            <option value="2018" class="value">2018</option>
-            <option value="2017" class="value">2017</option>
-            <option value="2016" class="value">2016</option>
-            <option value="2015" class="value">2015</option>
-           
-        </select>
-
-        <label>PLAN</label>
-        <input type="radio" name="plan" value="basico" id="basico" class="radio" > Básico
-        <input type="radio" name="plan" value="completo" id="completo" class="radio" > Completo
-
-        <button onclick="cotizadorDeseguro()" class="cotizar" value="">cotizar</button>
-    </form>
-    <div class="msj-elegir" id="msj-elegir">Elige marca, año y tipo de seguro</div>
-
-    <div class="resumen" style="display:none"></div>
-
-    <div class="resultado" style="display:none"></div>
-
--->
 
 <body>
-    <header>
+    <header class="header">
         <h1>Cotizador de seguros</h1>
     </header>
-    <form>
-        <label>Marca</label>
-        <select name="" id="make" class="id">
+<section class="container-father">
+    <div class="class">
 
-        </select>
-        <label>Año</label>
-        <select name="" id="year" class="id">
-
-        </select>
+    <img src="./utils/img/auto.png" alt="">
+    </div>
+    <form class="container">
         
-    </form>
+        <label>Marca:</label>
+        <select name="" id="make" class="id">
+            <option value="AMERICANO">AMERICANO</option>
+            <option value="EUROPEO">EUROPEO</option>
+            <option value="ASIATICO">ASIATICO</option>
+        </select>
+        <label>Año:</label>
+        <select name="" id="year" class="id">
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+        </select>
 
+        <label for="">Valor de compra:</label>
+        <input type="text" class="text" id="value-cars">
+
+        <div class="class">
+            <label for="">elige tu plan:</label>
+            <input type="radio" name="tipo" id="completo" value="completo">completo
+            <input type="radio" name="tipo"  id="basico" value="basico">basico
+        </div>
+
+
+
+        <button id="boton">cotizar</button>
+
+        <div id="result">
+
+        </div>
+    </form>
+</section>
+    <script type="module" src="./index.js">
+
+
+
+    </script>
 </body>
 
-<script type="module" src="./index.js"></script>
+
 
 
 </html>
